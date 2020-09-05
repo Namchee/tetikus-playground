@@ -34,7 +34,11 @@
       <div class="p-12 rounded bg-gray-900 text-white">
         <p>
           You can also hover over me and see that Tetikus can adapt to your
-          background color and produce beautiful contrast 👀.
+          background color and produce beautiful contrast 👀. This is achieved
+          with a powerful CSS property called
+          <var class="font-mono bg-gray-700 text-red-500 rounded">
+            `mix-blend-mode`
+          </var>
         </p>
       </div>
       <p>
@@ -88,13 +92,15 @@
 
     <section>
       <p>
-        This nonsense is made by
+        This project is made by
         <a target="_blank" href="https://namchee.netlify.app" rel="noreferrer">
           Namchee
         </a>
-        in 2020. Pls ignore usual nonsense.
+        in 2020. Pls ignore his usual nonsense and biased rants.
       </p>
     </section>
+
+    <tetikus />
   </main>
   <!-- end: main page -->
 </template>
