@@ -2,22 +2,23 @@
   "name": "tetikus-playground",
   "version": "0.0.0",
   "scripts": {
-    "dev": "vite --debug",
+    "dev": "vite",
+    "dev:snowpack": "snowpack dev",
     "build": "vite build"
   },
   "dependencies": {
     "tetikus": "file:../tetikus",
     "typeface-inter": "^3.15.0",
-    "vue": "^3.0.0-rc.1"
+    "vue": "^3.0.0-rc.10"
   },
   "devDependencies": {
     "@tailwindcss/typography": "^0.2.0",
     "@tailwindcss/ui": "^0.5.0",
-    "@vue/compiler-sfc": "^3.0.0-rc.1",
+    "@vue/compiler-sfc": "^3.0.0-rc.10",
     "eslint": "^7.7.0",
     "eslint-config-google": "^0.14.0",
     "eslint-plugin-vue": "^6.2.2",
     "tailwindcss": "^1.7.6",
-    "vite": "^1.0.0-rc.1"
+    "vite": "^1.0.0-rc.4"
   }
 }

@@ -26,21 +26,11 @@
         thingy that acts like your usual cursor? Don't worry, your browser
         is fine! It's just Tetikus in action!
       </p>
-      <p>
+      <p v-thover="{ scale: { value: 0.65, duration: 150 } }">
         If you hover over this paragraph, you'll see that the circle is now
         magically smaller ✨. It's not a bug, it's a feature! Tetikus
         can respond to any hover events and customize the custom cursor element!
       </p>
-      <div class="p-12 rounded bg-gray-900 text-white">
-        <p>
-          You can also hover over me and see that Tetikus can adapt to your
-          background color and produce beautiful contrast 👀. This is achieved
-          with a powerful CSS property called
-          <var class="font-mono bg-gray-700 text-red-500 rounded">
-            `mix-blend-mode`
-          </var>
-        </p>
-      </div>
       <p>
         Now, try clicking on these cool buttons below ⬇️️
       </p>
@@ -50,7 +40,8 @@
           border border-transparent
           hover:bg-indigo-600 focus:outline-none
           focus:border-indigo-700 focus:shadow-outline-indigo
-          active:bg-indigo-800 transition ease-in-out duration-200">
+          active:bg-indigo-800 transition ease-in-out duration-200"
+          v-thover>
           Cool Button Bro
         </button>
         <button class="bg-red-700 py-2 px-4 mx-4 text-sm
@@ -58,7 +49,8 @@
           border border-transparent
           hover:bg-red-600 focus:outline-none
           focus:border-red-700 focus:shadow-outline-red
-          active:bg-red-800 transition ease-in-out duration-200">
+          active:bg-red-800 transition ease-in-out duration-200"
+          v-thover>
           Cool Button Bro
         </button>
         <button class="bg-blue-700 py-2 px-4 ml-4 text-sm
@@ -66,7 +58,8 @@
           border border-transparent
           hover:bg-blue-600 focus:outline-none
           focus:border-blue-700 focus:shadow-outline-blue
-          active:bg-blue-800 transition ease-in-out duration-200">
+          active:bg-blue-800 transition ease-in-out duration-200"
+          v-thover>
           Cool Button Bro
         </button>
       </div>
@@ -100,7 +93,15 @@
       </p>
     </section>
 
-    <tetikus />
+    <tetikus
+      :size="64"
+      :borderWidth="2"
+      :lerp="0.2"
+      :clickBehavior="{ scale: 1.5, color:'rgba(21, 21, 21, 0.25)', borderColor: 'transparent' }" />
+    <tetikus
+      :size="12"
+      :borderWidth="0"
+      :color="'#212121'" />
   </main>
   <!-- end: main page -->
 </template>
