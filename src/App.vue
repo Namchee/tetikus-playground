@@ -97,7 +97,13 @@
       :size="64"
       :borderWidth="2"
       :lerp="0.2"
-      :clickBehavior="{ scale: 1.5, color:'rgba(21, 21, 21, 0.25)', borderColor: 'transparent' }" />
+      :clickBehavior="
+        {
+          scale: 1.5,
+          color:'rgba(21, 21, 21, 0.25)',
+          borderColor: 'transparent'
+        }"
+    />
     <tetikus
       :size="12"
       :borderWidth="0"

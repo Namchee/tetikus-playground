@@ -3,11 +3,10 @@
   "version": "0.0.0",
   "scripts": {
     "dev": "vite",
-    "dev:snowpack": "snowpack dev",
     "build": "vite build"
   },
   "dependencies": {
-    "tetikus": "file:../tetikus",
+    "@namchee/tetikus": "^0.1.2",
     "typeface-inter": "^3.15.0",
     "vue": "^3.0.0-rc.10"
   },
