@@ -6,6 +6,6 @@ import '@namchee/tetikus/dist/tetikus.css';
 import './index.css';
 
 const app = createApp(App);
-app.use(Tetikus.default);
+app.use(Tetikus);
 
 app.mount('#app');
